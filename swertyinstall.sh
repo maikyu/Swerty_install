@@ -7,8 +7,8 @@ cd ~/Swerty
 git clone https://github.com/maikyu/Swerty_install
 
 cd Swerty_install/SwertyFiles
-cp evdev.lst evdev.xml ~/usr/share/X11/xkb/rules
-cp se ~/usr/share/X11/xkb/symbols
+cp evdev.lst evdev.xml /usr/share/X11/xkb/rules
+cp se /usr/share/X11/xkb/symbols
 
 echo "Keyboard layout installed, removing installer"
 
