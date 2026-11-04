@@ -1,10 +1,17 @@
 #!/bin/bash
+echo "Creating folders for install and downloading necessary files"
 
-echo "Installing Swerty keyboard layout"
+mkdir ~/Swerty
+cd ~/Swerty
 
-cd ~/Projects/SwertyFiles/
-cp evdev.lst evdev.xml ~/Projects/SwertyTestInstall/rules
-cd ~/Projects/SwertyFiles/
-cp se ~/Projects/SwertyTestInstall/symbols 
+git clone https://github.com/maikyu/Swerty_install
 
-echo "done!"
+cd Swerty_install/SwertyFiles
+cp evdev.lst evdev.xml ~/usr/share/X11/xkb/rules
+cp se ~/usr/share/X11/xkb/symbols
+
+echo "Keyboard layout installed, removing installer"
+
+rm -r ~/Swerty
+
+echo "Done! Change keyboard layout in settings, look for Swerty!"
