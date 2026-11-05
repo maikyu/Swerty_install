@@ -1,8 +1,6 @@
 #!/bin/bash
 echo "Creating folders for install and downloading necessary files"
 
-sudo bash 
-
 mkdir ~/Swerty
 cd ~/Swerty
 
